@@ -37,6 +37,8 @@ public class NetworkSimulator {
         seed = s;
         filename = f;
         
+        System.out.printf("Trace: %d, Seed: %d, File: %s\n", TRACE, seed, filename);
+        
         // initialize clocktime
         clocktime = 0.0;
         

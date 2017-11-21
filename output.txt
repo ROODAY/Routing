@@ -1,0 +1,206 @@
+
+CLINK C:\Users\rudyt\Documents\Github\Routing>cd lsr 
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>make
+javac *.java
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>for /L %x in (1 1 5) do (for /L %y in (1 1 5) do (
+echo "LSR: Top Seed "  
+ java Project3 2 %y ../top%x.txt  1>../results/top%x/lsr%y.txt 
+) ) 
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(for /L %y in (1 1 5) do (
+echo "LSR: Top Seed "  
+ java Project3 2 %y ../top1.txt  1>../results/top1/lsr%y.txt 
+) ) 
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 1 ../top1.txt  1>../results/top1/lsr1.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 2 ../top1.txt  1>../results/top1/lsr2.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 3 ../top1.txt  1>../results/top1/lsr3.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 4 ../top1.txt  1>../results/top1/lsr4.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 5 ../top1.txt  1>../results/top1/lsr5.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(for /L %y in (1 1 5) do (
+echo "LSR: Top Seed "  
+ java Project3 2 %y ../top2.txt  1>../results/top2/lsr%y.txt 
+) ) 
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 1 ../top2.txt  1>../results/top2/lsr1.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 2 ../top2.txt  1>../results/top2/lsr2.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 3 ../top2.txt  1>../results/top2/lsr3.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 4 ../top2.txt  1>../results/top2/lsr4.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 5 ../top2.txt  1>../results/top2/lsr5.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(for /L %y in (1 1 5) do (
+echo "LSR: Top Seed "  
+ java Project3 2 %y ../top3.txt  1>../results/top3/lsr%y.txt 
+) ) 
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 1 ../top3.txt  1>../results/top3/lsr1.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 2 ../top3.txt  1>../results/top3/lsr2.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 3 ../top3.txt  1>../results/top3/lsr3.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 4 ../top3.txt  1>../results/top3/lsr4.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 5 ../top3.txt  1>../results/top3/lsr5.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(for /L %y in (1 1 5) do (
+echo "LSR: Top Seed "  
+ java Project3 2 %y ../top4.txt  1>../results/top4/lsr%y.txt 
+) ) 
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 1 ../top4.txt  1>../results/top4/lsr1.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 2 ../top4.txt  1>../results/top4/lsr2.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 3 ../top4.txt  1>../results/top4/lsr3.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 4 ../top4.txt  1>../results/top4/lsr4.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 5 ../top4.txt  1>../results/top4/lsr5.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(for /L %y in (1 1 5) do (
+echo "LSR: Top Seed "  
+ java Project3 2 %y ../top5.txt  1>../results/top5/lsr%y.txt 
+) ) 
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 1 ../top5.txt  1>../results/top5/lsr1.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 2 ../top5.txt  1>../results/top5/lsr2.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 3 ../top5.txt  1>../results/top5/lsr3.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 4 ../top5.txt  1>../results/top5/lsr4.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>(
+echo "LSR: Top Seed "  
+ java Project3 2 5 ../top5.txt  1>../results/top5/lsr5.txt 
+) 
+"LSR: Top Seed "
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\lsr>cd ../dvr 
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\dvr>make
+javac *.java
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\dvr>for /L %x in (1 1 5) do (for /L %y in (1 1 5) do (
+echo "LSR: Top Seed "  
+ java Project3 2 %y ../top%x.txt  1>../results/top%x/dvr%y.txt 
+) ) 
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\dvr>(for /L %y in (1 1 5) do (
+echo "LSR: Top Seed "  
+ java Project3 2 %y ../top1.txt  1>../results/top1/dvr%y.txt 
+) ) 
+
+CLINK C:\Users\rudyt\Documents\Github\Routing\dvr>(
+echo "LSR: Top Seed "  
+ java Project3 2 1 ../top1.txt  1>../results/top1/dvr1.txt 
+) 
+"LSR: Top Seed "

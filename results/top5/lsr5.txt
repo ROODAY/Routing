@@ -1,0 +1,69 @@
+Network Simulator v1.0
+Trace: 2, Seed: 5, File: ../top5.txt
+0: [0, 1, 9999, 9999]
+1: [1, 0, 4, 1]
+2: [9999, 4, 0, 9999]
+3: [9999, 1, 9999, 0]
+MAIN: rcv event, t=0.516, at 0 src: 1, dest: 0, contents:   1   0   4   1
+Output_0 [[0, -1], [1, 0], [5, 1], [2, 1]]
+                    
+   D0 |   cost  next-hop 
+  ----|-----------------------
+     0|    0     0
+dest 1|    1     1
+     2|    5     1
+     3|    2     1
+                    
+MAIN: rcv event, t=0.648, at 2 src: 1, dest: 2, contents:   1   0   4   1
+Output_2 [[5, 1], [4, 2], [0, -1], [5, 1]]
+                    
+   D2 |   cost  next-hop 
+  ----|-----------------------
+     0|    5     1
+dest 1|    4     1
+     2|    0     2
+     3|    5     1
+                    
+MAIN: rcv event, t=1.139, at 1 src: 0, dest: 1, contents:   0   1 9999 9999
+Output_1 [[1, 1], [0, -1], [4, 1], [1, 1]]
+                    
+   D1 |   cost  next-hop 
+  ----|-----------------------
+     0|    1     0
+dest 1|    0     1
+     2|    4     2
+     3|    1     3
+                    
+MAIN: rcv event, t=1.761, at 1 src: 2, dest: 1, contents: 9999   4   0 9999
+Output_1 [[1, 1], [0, -1], [4, 1], [1, 1]]
+                    
+   D1 |   cost  next-hop 
+  ----|-----------------------
+     0|    1     0
+dest 1|    0     1
+     2|    4     2
+     3|    1     3
+                    
+MAIN: rcv event, t=1.946, at 3 src: 1, dest: 3, contents:   1   0   4   1
+Output_3 [[2, 1], [1, 3], [5, 1], [0, -1]]
+                    
+   D3 |   cost  next-hop 
+  ----|-----------------------
+     0|    2     1
+dest 1|    1     1
+     2|    5     1
+     3|    0     3
+                    
+MAIN: rcv event, t=3.346, at 1 src: 3, dest: 1, contents: 9999   1 9999   0
+Output_1 [[1, 1], [0, -1], [4, 1], [1, 1]]
+                    
+   D1 |   cost  next-hop 
+  ----|-----------------------
+     0|    1     0
+dest 1|    0     1
+     2|    4     2
+     3|    1     3
+                    
+
+Simulator terminated at t=3.345561, no packets in medium
+Simulator terminated at time 3.345561082796716

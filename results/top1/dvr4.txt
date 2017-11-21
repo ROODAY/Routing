@@ -1,0 +1,563 @@
+Network Simulator v1.0
+Trace: 2, Seed: 4, File: ../top1.txt
+0: [0, 1, 1, 9999]
+Initial broadcast for 0
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1   9999 
+dest 2|  9999     1 
+     3|  9999   9999 
+Initial broadcast for 0
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1   9999 
+dest 2|  9999     1 
+     3|  9999   9999 
+0: [1, 0, 1, 1]
+Initial broadcast for 1
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1   9999   9999
+dest 2|  9999     1   9999
+     3|  9999   9999     1
+Initial broadcast for 1
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1   9999   9999
+dest 2|  9999     1   9999
+     3|  9999   9999     1
+Initial broadcast for 1
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1   9999   9999
+dest 2|  9999     1   9999
+     3|  9999   9999     1
+0: [1, 1, 0, 1]
+Initial broadcast for 2
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|  9999     1   9999
+     3|  9999   9999     1
+Initial broadcast for 2
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|  9999     1   9999
+     3|  9999   9999     1
+Initial broadcast for 2
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|  9999     1   9999
+     3|  9999   9999     1
+0: [9999, 1, 1, 0]
+Initial broadcast for 3
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|  9999   9999
+dest 1|    1   9999
+     2|  9999     1
+Initial broadcast for 3
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|  9999   9999
+dest 1|    1   9999
+     2|  9999     1
+MAIN: rcv event, t=0.111, at 1 src: 0, dest: 1, contents:   0   1   1 9999
+MAIN: rcv event, t=0.640, at 0 src: 1, dest: 0, contents:   1   0   1   1
+MAIN: rcv event, t=0.791, at 1 src: 2, dest: 1, contents:   1   1   0   1
+MAIN: rcv event, t=0.915, at 0 src: 2, dest: 0, contents:   1   1   0   1
+MAIN: rcv event, t=0.940, at 3 src: 1, dest: 3, contents:   1   0   1   1
+MAIN: rcv event, t=1.137, at 3 src: 2, dest: 3, contents:   1   1   0   1
+MAIN: rcv event, t=1.341, at 0 src: 1, dest: 0, contents: 9999   0   1   1
+
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1     2 
+dest 2|    2     1 
+     3|    2     2 
+MAIN: rcv event, t=1.475, at 2 src: 0, dest: 2, contents:   0   1   1 9999
+MAIN: rcv event, t=1.702, at 2 src: 1, dest: 2, contents:   1   0   1   1
+MAIN: rcv event, t=2.318, at 3 src: 1, dest: 3, contents:   1   0   1 9999
+
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    2     2
+dest 1|    1     2
+     2|    2     1
+MAIN: rcv event, t=2.529, at 1 src: 3, dest: 1, contents: 9999   1   1   0
+MAIN: rcv event, t=2.687, at 3 src: 1, dest: 3, contents:   1   0   1 9999
+
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    2     2
+dest 1|    1     2
+     2|    2     1
+MAIN: rcv event, t=2.886, at 0 src: 1, dest: 0, contents: 9999   0   1   1
+
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1     2 
+dest 2|    2     1 
+     3|    2     2 
+MAIN: rcv event, t=3.159, at 2 src: 3, dest: 2, contents: 9999   1   1   0
+MAIN: rcv event, t=3.323, at 2 src: 1, dest: 2, contents:   1   0 9999   1
+
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1     2   9999
+dest 1|    2     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=3.329, at 2 src: 0, dest: 2, contents:   0   1 9999   2
+MAIN: rcv event, t=3.528, at 2 src: 1, dest: 2, contents:   1   0 9999   1
+
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1     2   9999
+dest 1|    2     1     2
+     3|    3     2     1
+MAIN: rcv event, t=3.687, at 1 src: 0, dest: 1, contents:   0 9999   1 9999
+
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     2   9999
+dest 2|    2     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=3.784, at 0 src: 2, dest: 0, contents: 9999   1   0   1
+
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1     2 
+dest 2|    2     1 
+     3|    2     2 
+MAIN: rcv event, t=4.172, at 3 src: 2, dest: 3, contents:   1   1   0 9999
+
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    2     2
+dest 1|    1     2
+     2|    2     1
+MAIN: rcv event, t=4.536, at 2 src: 0, dest: 2, contents:   0   1 9999   2
+
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1     2   9999
+dest 1|    2     1     2
+     3|    3     2     1
+MAIN: rcv event, t=4.743, at 0 src: 2, dest: 0, contents: 9999   1   0   1
+
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1     2 
+dest 2|    2     1 
+     3|    2     2 
+MAIN: rcv event, t=5.038, at 1 src: 0, dest: 1, contents:   0 9999   1 9999
+
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     2   9999
+dest 2|    2     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=5.419, at 3 src: 2, dest: 3, contents:   1   1   0 9999
+
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    2     2
+dest 1|    1     2
+     2|    2     1
+MAIN: rcv event, t=5.869, at 1 src: 3, dest: 1, contents: 9999 9999   1   0
+
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     2   9999
+dest 2|    2     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=6.101, at 0 src: 1, dest: 0, contents: 9999   0   1   1
+
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1     2 
+dest 2|    2     1 
+     3|    2     2 
+MAIN: rcv event, t=6.104, at 3 src: 1, dest: 3, contents:   1   0   1 9999
+
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    2     2
+dest 1|    1     2
+     2|    2     1
+MAIN: rcv event, t=6.251, at 2 src: 3, dest: 2, contents:   2   1 9999   0
+MAIN: rcv event, t=6.471, at 2 src: 3, dest: 2, contents:   2   1 9999   0
+
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1     2     3
+dest 1|    2     1     2
+     3|    3     2     1
+MAIN: rcv event, t=6.650, at 1 src: 3, dest: 1, contents: 9999 9999   1   0
+
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     2   9999
+dest 2|    2     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=6.735, at 2 src: 1, dest: 2, contents:   1   0 9999   1
+
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1     2     3
+dest 1|    2     1     2
+     3|    3     2     1
+MAIN: rcv event, t=7.420, at 3 src: 2, dest: 3, contents:   1   1   0 9999
+
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    2     2
+dest 1|    1     2
+     2|    2     1
+MAIN: rcv event, t=7.913, at 0 src: 2, dest: 0, contents: 9999   1   0   1
+
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1     2 
+dest 2|    2     1 
+     3|    2     2 
+MAIN: rcv event, t=7.926, at 3 src: 2, dest: 3, contents:   1   1   0 9999
+
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    2     2
+dest 1|    1     2
+     2|    2     1
+MAIN: rcv event, t=7.935, at 0 src: 2, dest: 0, contents: 9999   1   0   1
+
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1     2 
+dest 2|    2     1 
+     3|    2     2 
+MAIN: rcv event, t=8.013, at 1 src: 2, dest: 1, contents:   1 9999   0   1
+
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     2   9999
+dest 2|    2     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=8.428, at 1 src: 2, dest: 1, contents:   1 9999   0   1
+
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     2   9999
+dest 2|    2     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=8.675, at 0 src: 2, dest: 0, contents: 9999   1   0   1
+
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1     2 
+dest 2|    2     1 
+     3|    2     2 
+MAIN: rcv event, t=9.021, at 1 src: 2, dest: 1, contents:   1 9999   0   1
+
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     2   9999
+dest 2|    2     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=9.481, at 1 src: 2, dest: 1, contents:   1 9999   0   1
+
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     2   9999
+dest 2|    2     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=9.805, at 3 src: 2, dest: 3, contents:   1   1   0 9999
+
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    2     2
+dest 1|    1     2
+     2|    2     1
+MAIN: rcv event, t=10.509, at 1 src: 2, dest: 1, contents:   1 9999   0   1
+
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     2   9999
+dest 2|    2     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=10000.000, at -1*********************************************************
+Change made to 0: 1 --> 20
+*********************************************************
+Updated Re-broadcast for 0
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|   20     2 
+dest 2|   21     1 
+     3|   21     2 
+*********************************************************
+Change made to 1: 1 --> 20
+*********************************************************
+Updated Re-broadcast for 1
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20     2   9999
+dest 2|   21     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=10000.004, at 2 src: 0, dest: 2, contents:   0 9999 9999 9999
+
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1     2     3
+dest 1|  9999     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=10000.004, at 1 src: 0, dest: 1, contents:   0   2   1   2
+MAIN: rcv event, t=10001.147, at 3 src: 1, dest: 3, contents:   2   0   1 9999
+MAIN: rcv event, t=10001.361, at 0 src: 1, dest: 0, contents:   2   0   1   1
+MAIN: rcv event, t=10001.377, at 1 src: 3, dest: 1, contents:   2 9999   1   0
+MAIN: rcv event, t=10001.443, at 2 src: 1, dest: 2, contents: 9999   0 9999   1
+
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1   9999     3
+dest 1|  9999     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=10002.389, at 2 src: 1, dest: 2, contents: 9999   0 9999   1
+
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1   9999     3
+dest 1|  9999     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=10002.933, at 1 src: 0, dest: 1, contents:   0   2   1   2
+
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20     2     3
+dest 2|   21     1     2
+     3|   22     2     1
+MAIN: rcv event, t=10002.986, at 0 src: 1, dest: 0, contents:   2   0   1   1
+
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|   20     2 
+dest 2|   21     1 
+     3|   21     2 
+MAIN: rcv event, t=10003.011, at 3 src: 1, dest: 3, contents:   2   0   1 9999
+
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    3     2
+dest 1|    1     2
+     2|    2     1
+MAIN: rcv event, t=10004.233, at 2 src: 3, dest: 2, contents: 9999   1 9999   0
+
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|  9999     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=10004.577, at 2 src: 0, dest: 2, contents:   0 9999 9999 9999
+
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|  9999     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=10004.701, at 3 src: 1, dest: 3, contents:   2   0   1 9999
+
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    3     2
+dest 1|    1     2
+     2|    2     1
+MAIN: rcv event, t=10004.834, at 0 src: 1, dest: 0, contents:   2   0   1   1
+
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|   20     2 
+dest 2|   21     1 
+     3|   21     2 
+MAIN: rcv event, t=10005.044, at 2 src: 1, dest: 2, contents: 9999   0 9999   1
+
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|  9999     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=20000.000, at -1*********************************************************
+Change made to 0: 20 --> 1
+*********************************************************
+Updated Re-broadcast for 0
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1     2 
+dest 2|    2     1 
+     3|    2     2 
+*********************************************************
+Change made to 1: 20 --> 1
+*********************************************************
+Updated Re-broadcast for 1
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     2     3
+dest 2|    2     1     2
+     3|    3     2     1
+MAIN: rcv event, t=20000.287, at 1 src: 0, dest: 1, contents:   0 9999   1 9999
+
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     2     3
+dest 2|    2     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=20000.332, at 2 src: 0, dest: 2, contents:   0   1 9999   2
+MAIN: rcv event, t=20000.887, at 3 src: 1, dest: 3, contents:   1   0   1 9999
+MAIN: rcv event, t=20001.045, at 2 src: 1, dest: 2, contents:   1   0 9999   1
+MAIN: rcv event, t=20001.576, at 0 src: 1, dest: 0, contents: 9999   0   1   1
+
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1     2 
+dest 2|    2     1 
+     3|    2     2 
+MAIN: rcv event, t=20001.639, at 0 src: 2, dest: 0, contents: 9999   1   0   1
+
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1     2 
+dest 2|    2     1 
+     3|    2     2 
+MAIN: rcv event, t=20002.055, at 3 src: 2, dest: 3, contents:   1   1   0 9999
+
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    2     2
+dest 1|    1     2
+     2|    2     1
+MAIN: rcv event, t=20002.078, at 2 src: 3, dest: 2, contents:   2   1 9999   0
+MAIN: rcv event, t=20002.101, at 1 src: 2, dest: 1, contents:   1 9999   0   1
+
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     2     3
+dest 2|    2     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=20002.584, at 3 src: 2, dest: 3, contents:   1   1   0 9999
+
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    2     2
+dest 1|    1     2
+     2|    2     1
+MAIN: rcv event, t=20002.713, at 3 src: 2, dest: 3, contents:   1   1   0 9999
+
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    2     2
+dest 1|    1     2
+     2|    2     1
+MAIN: rcv event, t=20002.822, at 1 src: 3, dest: 1, contents: 9999 9999   1   0
+
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     2   9999
+dest 2|    2     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=20003.276, at 0 src: 2, dest: 0, contents: 9999   1   0   1
+
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1     2 
+dest 2|    2     1 
+     3|    2     2 
+MAIN: rcv event, t=20004.038, at 1 src: 2, dest: 1, contents:   1 9999   0   1
+
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     2   9999
+dest 2|    2     1     2
+     3|  9999     2     1
+MAIN: rcv event, t=20004.409, at 0 src: 2, dest: 0, contents: 9999   1   0   1
+
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1     2 
+dest 2|    2     1 
+     3|    2     2 
+MAIN: rcv event, t=20005.192, at 1 src: 2, dest: 1, contents:   1 9999   0   1
+
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     2   9999
+dest 2|    2     1     2
+     3|  9999     2     1
+
+Simulator terminated at t=20005.191504, no packets in medium
+Simulator terminated at time 20005.19150364696

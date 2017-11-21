@@ -21,7 +21,13 @@ public class Project3
         BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
         String buffer = "";
                                    
-        System.out.println("Network Simulator v1.0");        
+        System.out.println("Network Simulator v1.0");
+
+        if (argv.length == 3) {
+          trace = Integer.parseInt(argv[0]);
+          seed = Integer.parseInt(argv[1]);
+          filename = argv[2];
+        } 
         
         while (trace < 0)
         {
@@ -83,24 +89,27 @@ public class Project3
             }
         }
 
-        System.out.print("Enter topology file (topology.txt): ['default_topology.txt'] ");
-        try
+        while (filename.equals(""))
         {
-            buffer = stdIn.readLine();
-        }
-        catch (IOException ioe)
-        {
-            System.out.println("IOError reading your input!");
-            System.exit(1);
-        }
+          System.out.print("Enter topology file (topology.txt): ['default_topology.txt'] ");
+          try
+          {
+              buffer = stdIn.readLine();
+          }
+          catch (IOException ioe)
+          {
+              System.out.println("IOError reading your input!");
+              System.exit(1);
+          }
 
-        if (buffer.equals(""))
-        {
-            filename = "default_topology.txt";
-        }
-        else
-        {            
-            filename = buffer;
+          if (buffer.equals(""))
+          {
+              filename = "default_topology.txt";
+          }
+          else
+          {            
+              filename = buffer;
+          }
         }
          
         simulator = new NetworkSimulator(trace, seed, filename);                  

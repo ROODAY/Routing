@@ -1,0 +1,109 @@
+Network Simulator v1.0
+Trace: 2, Seed: 3, File: ../top1.txt
+0: [0, 1, 1, 9999]
+1: [1, 0, 1, 1]
+2: [1, 1, 0, 1]
+3: [9999, 1, 1, 0]
+MAIN: rcv event, t=0.434, at 2 src: 0, dest: 2, contents:   0   1   1 9999
+Output_2 [[1, 2], [1, 2], [0, -1], [1, 2]]
+                    
+   D2 |   cost  next-hop 
+  ----|-----------------------
+     0|    1     0
+dest 1|    1     1
+     2|    0     2
+     3|    1     3
+                    
+MAIN: rcv event, t=0.633, at 0 src: 1, dest: 0, contents:   1   0   1   1
+Output_0 [[0, -1], [1, 0], [1, 0], [2, 1]]
+                    
+   D0 |   cost  next-hop 
+  ----|-----------------------
+     0|    0     0
+dest 1|    1     1
+     2|    1     2
+     3|    2     1
+                    
+MAIN: rcv event, t=0.941, at 2 src: 1, dest: 2, contents:   1   0   1   1
+Output_2 [[1, 2], [1, 2], [0, -1], [1, 2]]
+                    
+   D2 |   cost  next-hop 
+  ----|-----------------------
+     0|    1     0
+dest 1|    1     1
+     2|    0     2
+     3|    1     3
+                    
+MAIN: rcv event, t=1.083, at 1 src: 0, dest: 1, contents:   0   1   1 9999
+Output_1 [[1, 1], [0, -1], [1, 1], [1, 1]]
+                    
+   D1 |   cost  next-hop 
+  ----|-----------------------
+     0|    1     0
+dest 1|    0     1
+     2|    1     2
+     3|    1     3
+                    
+MAIN: rcv event, t=1.259, at 3 src: 1, dest: 3, contents:   1   0   1   1
+Output_3 [[2, 1], [1, 3], [1, 3], [0, -1]]
+                    
+   D3 |   cost  next-hop 
+  ----|-----------------------
+     0|    2     1
+dest 1|    1     1
+     2|    1     2
+     3|    0     3
+                    
+MAIN: rcv event, t=1.338, at 1 src: 2, dest: 1, contents:   1   1   0   1
+Output_1 [[1, 1], [0, -1], [1, 1], [1, 1]]
+                    
+   D1 |   cost  next-hop 
+  ----|-----------------------
+     0|    1     0
+dest 1|    0     1
+     2|    1     2
+     3|    1     3
+                    
+MAIN: rcv event, t=1.597, at 0 src: 2, dest: 0, contents:   1   1   0   1
+Output_0 [[0, -1], [1, 0], [1, 0], [2, 1]]
+                    
+   D0 |   cost  next-hop 
+  ----|-----------------------
+     0|    0     0
+dest 1|    1     1
+     2|    1     2
+     3|    2     1
+                    
+MAIN: rcv event, t=2.207, at 3 src: 2, dest: 3, contents:   1   1   0   1
+Output_3 [[2, 1], [1, 3], [1, 3], [0, -1]]
+                    
+   D3 |   cost  next-hop 
+  ----|-----------------------
+     0|    2     1
+dest 1|    1     1
+     2|    1     2
+     3|    0     3
+                    
+MAIN: rcv event, t=2.663, at 2 src: 3, dest: 2, contents: 9999   1   1   0
+Output_2 [[1, 2], [1, 2], [0, -1], [1, 2]]
+                    
+   D2 |   cost  next-hop 
+  ----|-----------------------
+     0|    1     0
+dest 1|    1     1
+     2|    0     2
+     3|    1     3
+                    
+MAIN: rcv event, t=2.827, at 1 src: 3, dest: 1, contents: 9999   1   1   0
+Output_1 [[1, 1], [0, -1], [1, 1], [1, 1]]
+                    
+   D1 |   cost  next-hop 
+  ----|-----------------------
+     0|    1     0
+dest 1|    0     1
+     2|    1     2
+     3|    1     3
+                    
+
+Simulator terminated at t=2.826746, no packets in medium
+Simulator terminated at time 2.8267464217047644
