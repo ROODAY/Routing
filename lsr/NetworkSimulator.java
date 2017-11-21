@@ -16,6 +16,7 @@ public class NetworkSimulator {
     public static int TRACE;
     public static double clocktime;
     public static int seed;
+    public static String filename;
     
     // Nodes
     private Node n0;
@@ -30,16 +31,45 @@ public class NetworkSimulator {
     /**
      * Constructor
      */
-    public NetworkSimulator(int t, int s) {
+    public NetworkSimulator(int t, int s, String f) {
         // grab input arguments
         TRACE = t;
         seed = s;
+        filename = f;
         
         // initialize clocktime
         clocktime = 0.0;
         
         // create event list
         eventList = new EventListImpl();
+    }
+
+    // Source: https://stackoverflow.com/a/22186042/3325942
+    public static int[][] create2DIntMatrixFromFile(String filename) throws Exception {
+        int[][] matrix = null;
+        BufferedReader buffer = new BufferedReader(new FileReader(filename));
+
+        String line;
+        int row = 0;
+        int size = 0;
+
+        while ((line = buffer.readLine()) != null) {
+            String[] vals = line.trim().split("\\s+");
+
+            // Lazy instantiation.
+            if (matrix == null) {
+                size = vals.length;
+                matrix = new int[size][size];
+            }
+
+            for (int col = 0; col < size; col++) {
+                matrix[row][col] = Integer.parseInt(vals[col]);
+            }
+
+            row++;
+        }
+
+        return matrix;
     }
     
     
@@ -66,39 +96,45 @@ public class NetworkSimulator {
         n2 = new Node();
         n3 = new Node();
 
+        try {
+          connectcosts = create2DIntMatrixFromFile(filename);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         
         /***************************
          * Initialize routers
          ***************************/
         // Initialize router 0
-        int[] initialCosts0 = new int[4];
-        initialCosts0[0] = 0; initialCosts0[1] = 1; initialCosts0[2] = 1; initialCosts0[3] = n0.INFINITY;
+        int[] initialCosts0 = connectcosts[0];//new int[4];
+        //initialCosts0[0] = 0; initialCosts0[1] = 1; initialCosts0[2] = 1; initialCosts0[3] = n0.INFINITY;
         n0.rtinit(0,initialCosts0);
         
         // Initialize router 1
-        int[] initialCosts1 = new int[4];
-        initialCosts1[0] = 1; initialCosts1[1] = 0; initialCosts1[2] = 10; initialCosts1[3] = 7;
+        int[] initialCosts1 = connectcosts[1];//new int[4];
+        //initialCosts1[0] = 1; initialCosts1[1] = 0; initialCosts1[2] = 10; initialCosts1[3] = 7;
         n1.rtinit(1,initialCosts1);
         
         // Initialize router 2
-        int[] initialCosts2 = new int[4];
-        initialCosts2[0] = 1; initialCosts2[1] = 10; initialCosts2[2] = 0; initialCosts2[3] = 2;
+        int[] initialCosts2 = connectcosts[2];//new int[4];
+        //initialCosts2[0] = 1; initialCosts2[1] = 10; initialCosts2[2] = 0; initialCosts2[3] = 2;
         n2.rtinit(2,initialCosts2);
         
         // Initialize router 3
-        int[] initialCosts3 = new int[4];
-        initialCosts3[0] = n3.INFINITY; initialCosts3[1] = 7; initialCosts3[2] = 2; initialCosts3[3] = 0;
+        int[] initialCosts3 = connectcosts[3];//new int[4];
+        //initialCosts3[0] = n3.INFINITY; initialCosts3[1] = 7; initialCosts3[2] = 2; initialCosts3[3] = 0;
         n3.rtinit(3,initialCosts3);
         
         /***************************
          * Initialize connection costs between routers
          * Used for performing some sanity checks in the tolayer2() method
          ***************************/
-        connectcosts = new int[4][4];
+        /*connectcosts = new int[4][4];
         connectcosts[0][0]=0;  		connectcosts[0][1]=1;  connectcosts[0][2]=1; connectcosts[0][3]=9999;
         connectcosts[1][0]=1;  		connectcosts[1][1]=0;  connectcosts[1][2]=10; connectcosts[1][3]=7;
         connectcosts[2][0]=1;  		connectcosts[2][1]=10;  connectcosts[2][2]=0; connectcosts[2][3]=2;
-        connectcosts[3][0]=9999;  	connectcosts[3][1]=7;  connectcosts[3][2]=2; connectcosts[3][3]=0;
+        connectcosts[3][0]=9999;  	connectcosts[3][1]=7;  connectcosts[3][2]=2; connectcosts[3][3]=0;*/
         
         /***************************************
          * initialize future link changes

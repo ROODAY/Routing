@@ -17,6 +17,7 @@ public class Project3
         
         int trace = -1;
         int seed = -1;
+        String filename = "";
         BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
         String buffer = "";
                                    
@@ -81,8 +82,28 @@ public class Project3
                 }
             }
         }
+
+        System.out.print("Enter topology file (topology.txt): ['default_topology.txt'] ");
+        try
+        {
+            buffer = stdIn.readLine();
+        }
+        catch (IOException ioe)
+        {
+            System.out.println("IOError reading your input!");
+            System.exit(1);
+        }
+
+        if (buffer.equals(""))
+        {
+            filename = "default_topology.txt";
+        }
+        else
+        {            
+            filename = buffer;
+        }
          
-        simulator = new NetworkSimulator(trace, seed);                  
+        simulator = new NetworkSimulator(trace, seed, filename);                  
         simulator.runSimulator();
     }
 }
